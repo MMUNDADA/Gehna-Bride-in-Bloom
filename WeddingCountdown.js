@@ -13,7 +13,7 @@ const WeddingCountdown = () => {
   const [prediction, setPrediction] = useState('');
 
   // Set your wedding date here
-  const weddingDate = new Date('2024-06-15T00:00:00');
+  const weddingDate = new Date('2025-04-20T00:00:00');
 
   const funMessages = [
     "Get ready for the most epic 'I do' moment ever! 💍",

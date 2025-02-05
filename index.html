@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gehna's Wedding</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Intro Section -->
+    <section class="section" id="intro">
+        <div class="content">
+            <h3 class="subtitle">The Gehna Ayush Saga</h3>
+            <h1 class="playfair-display">Gehna & Ayush <br> Tie the Knot</h1>
+            <p>Since I can't be there in person right now, I had to do something dramatic (obviously). So here's a little pre-wedding surprise from me to you—filled with laughter, love, and a touch of my nonsense.</p>
+            <div class="scroll-container">
+                <p class="scroll-text">Scroll down for some wedding magic!</p>
+                <button id="scrollToNext" class="scroll-button"></button>
+            </div>
+        </div>
+        <div class="image-placeholder">
+            <img src="GehnaAyush_homepage.jpg" alt="Gehna & Ayush"/>
+        </div>
+    </section>
+
+    <!-- Countdown Timer -->
+    <section id="countdown" class="section">
+        <div class="countdown-content">
+            <h1 class="playfair-display">Countdown</h1>
+            <div class="countdown-container">
+                <div class="countdown-item">
+                    <div id="countdown-days">00</div>
+                    <span>Days</span>
+                </div>
+                <div class="countdown-item">
+                    <div id="countdown-hours">00</div>
+                    <span>Hours</span>
+                </div>
+                <div class="countdown-item">
+                    <div id="countdown-minutes">00</div>
+                    <span>Minutes</span>
+                </div>
+                <div class="countdown-item">
+                    <div id="countdown-seconds">00</div>
+                    <span>Seconds</span>
+                </div>
+            </div>
+            <p class="countdown-text">Can't wait to get you married!<br>
+            May he always shower you with love like this!<br>
+            May your days be filled with endless laughter, joy, and adventure.<br>
+            May you always find warmth in each other's arms and kindness in each other's hearts.<br>
+            May your love grow stronger with each passing moment, just like this countdown ticking down to your special day!</p>
+            <div class="scroll-container">
+                <p class="scroll-text">Scroll down for more magic!</p>
+                <button id="scrollToNext" class="scroll-button" onclick="document.getElementById('fortune-teller').scrollIntoView({ behavior: 'smooth' });"></button>
+            </div>
+        </div>
+        <div class="countdown-image">
+            <img src="Countdown.jpg" alt="Wedding Countdown">
+        </div>
+    </section>
+
+    <!-- Wedding Fortune Teller -->
+    <section id="fortune-teller" class="section">
+        <div class="fortune-image">
+            <img src="FortuneTeller.jpg" alt="Fortune Teller">
+        </div>
+        <div class="fortune-content">
+            <h1 class="playfair-display">Wedding <br>Fortune <br> Teller</h1>
+            <p class="fortune-text">Click the button to reveal your wedding fortune!</p>
+            <button id="reveal-fortune" class="fortune-button" onclick="showFortune()">Reveal Fortune</button>
+            <p id="fortune-output" class="fortune-result"></p>
+        </div>
+    </section>
+    
+
+    <!-- Personal Message -->
+    <section class="section" id="personal-message">
+        <h2>A Message from Me</h2>
+        <p>Dear Gehna & Ayush,</p>
+        <p>[Your heartfelt message goes here]</p>
+    </section>
+</body>
+</html>
