@@ -3,10 +3,22 @@
 // Fortune Teller
 function showFortune() {
     const fortunes = [
-        "Someone is going to steal the spotlight on the dance floor!",
-        "You will eat the best dessert of your life.",
-        "Beware of a surprise speech that will make everyone laugh.",
-        "A dance battle might break out!"
+        "Gehna is going to steal the spotlight on the dance floor!",
+        "A dance battle might break out!",
+        "The Bride will take everyone's breath away",
+        "Gehna will get drunk,lose her 'properness' and start dancing on Chaiyya Chaiyya!",
+        "Gehna will be showing 'eyes' to people who aren't drinking and dancing!",
+        "You’ll lose your voice cheering during the sangeet, but gain unforgettable memories!",
+        "At least one relative will dramatically cry during the wedding—bonus points if it's not you.",
+        "Your outfits will be flawless",
+        "Your feet will be sore from dancing, but your heart will be full of joy!",
+        "You will be annoyed about why Mehndi is taking so long",
+        "The groom’s squad will pull off a stunt no one saw coming!",
+        "During sangeet, the uncles and aunties will put all the youngsters to shame on the dance floor!",
+        "You will hear the phrase 'just one more drink' at least 20 times during cocktail night",
+        "Ayush will sneak loving glances at Gehna even in the middle of all the chaos",
+        "Ayush will randomly hold Gehna's hand tightly when no one’s looking, just to say I am here",
+        "Ayush will make a grand romantic gesture on stage, even if he’s shy"
     ];
     const randomFortune = fortunes[Math.floor(Math.random() * fortunes.length)];
     document.getElementById("fortune-output").innerText = randomFortune;

@@ -206,6 +206,7 @@ p {
     font-weight: bold;
 }
 
+
 .fortune-button:hover {
     background: #a85e2b;
     transform: scale(1.05);
@@ -225,4 +226,19 @@ p {
     max-width: 100%;
     height: auto;
     object-fit: cover;
+}
+
+.fortune-result {
+    font-size: 24px;
+    color: #113301;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    padding: 15px;
+    border: 0.5px solid #113301;
+    border-radius: 10px;
+    background: #b7cfac;
+    width: 80%;
+    max-width: 500px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
 }
