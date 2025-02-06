@@ -91,3 +91,9 @@ function toggleEnvelope() {
 function openLetter(pdf) {
     window.open(pdf, "_blank");
 }
+
+
+function openPlaylist() {
+    const playlistUrl = "https://music.youtube.com/playlist?list=PL_R3a978O-ez9qeEkMun08REpAqf7oTOE&si=29xzcq_jpqCmXlYG"; // Replace with your actual playlist URL
+    window.open(playlistUrl, "_blank");
+}

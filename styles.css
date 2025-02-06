@@ -333,3 +333,79 @@ p {
 .letters-buttons button:hover {
     background: #a85e2b;
 }
+
+
+#playlist {
+    background: url('subtle_pattern_background.png') repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 100vh;
+}
+
+.playlist-content {
+    max-width: 60%;
+    text-align: center;
+}
+
+.playlist-text {
+    font-size: 20px;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+}
+
+.playlist-cover {
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    cursor: pointer;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.playlist-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.playlist-playbar {
+    width: 40%;
+    height: 40%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.playlist-cover:hover .playlist-image {
+    transform: scale(1.1);
+}
+
+.play-button {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 60px;
+    height: 60px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    color: #c47f39;
+    transition: background-color 0.3s ease;
+}
+
+.play-button::after {
+    content: '▶';
+}
+
+.playlist-cover:hover .play-button {
+    background-color: rgba(255, 255, 255, 1);
+}

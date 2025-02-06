@@ -93,6 +93,22 @@
                     <button onclick="openLetter('first-anniversary.pdf')">Your First Anniversary</button>
                 </div>
             </div>
+            <div class="scroll-container">
+                <p class="scroll-text">The Last and Final One!</p>
+                <button id="scrollToNext" class="scroll-button" onclick="document.getElementById('playlist').scrollIntoView({ behavior: 'smooth' });"></button>
+            </div>
+        </div>
+    </section>
+    <section id="playlist" class="section">
+        <div class="playlist-content">
+            <h1 class="playfair-display">Gehna's Wedding Playlist</h1>
+            <p class="playlist-text">From Bollywood Dance Numbers 💃 to Sweet Love songs 💕🎵! <br> This playlist has got your every mood covered! <br><br>
+                Click to Play!
+            </p>
+            <div class="playlist-cover" onclick="openPlaylist()">
+                <img src="playlist-cover.jpg" alt="Playlist Cover" class="playlist-image">
+                <div class="play-button"></div>
+            </div>
         </div>
     </section>    
 </body>
