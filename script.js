@@ -73,3 +73,21 @@ document.addEventListener("DOMContentLoaded", function() {
     setInterval(updateCountdown, 1000);
     updateCountdown();
 });
+
+
+function toggleEnvelope() {
+    var envelope = document.getElementById("envelope");
+    var buttons = document.getElementById("lettersButtons");
+
+    if (!envelope.classList.contains("opened")) {
+        envelope.classList.add("opened");
+        buttons.style.display = "flex";
+    } else {
+        envelope.classList.remove("opened");
+        buttons.style.display = "none";
+    }
+}
+
+function openLetter(pdf) {
+    window.open(pdf, "_blank");
+}

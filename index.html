@@ -19,7 +19,7 @@
             <p>Since I can't be there in person right now, I had to do something dramatic (obviously). So here's a little pre-wedding surprise from me to you—filled with laughter, love, and a touch of my nonsense.</p>
             <div class="scroll-container">
                 <p class="scroll-text">Scroll down for some wedding magic!</p>
-                <button id="scrollToNext" class="scroll-button"></button>
+                <button id="scrollToNext" class="scroll-button" onclick="document.getElementById('countdown').scrollIntoView({ behavior: 'smooth' });"></button>
             </div>
         </div>
         <div class="image-placeholder">
@@ -76,17 +76,24 @@
             <p id="fortune-output" class="fortune-result"></p>
             <div class="scroll-container">
                 <p class="scroll-text">It's not over yet!</p>
-                <button id="scrollToNext" class="scroll-button" onclick="document.getElementById('fortune-teller').scrollIntoView({ behavior: 'smooth' });"></button>
+                <button id="scrollToNext" class="scroll-button" onclick="document.getElementById('letters-for-the-future').scrollIntoView({ behavior: 'smooth' });"></button>
             </div>
         </div>
     </section>
-    
-
-    <!-- Personal Message -->
-    <section class="section" id="personal-message">
-        <h2>A Message from Me</h2>
-        <p>Dear Gehna & Ayush,</p>
-        <p>[Your heartfelt message goes here]</p>
-    </section>
+    <section id="letters-for-the-future" class="section">
+        <div class="letters-content">
+            <h1 class="playfair-display">Letters for the Future</h1>
+            <p class="letters-text">Some words from me to you, for the moments ahead.</p>
+            <div class="envelope-container" onclick="toggleEnvelope()">
+                <div class="envelope" id="envelope"></div>
+                <div class="letters-buttons" id="lettersButtons">
+                    <button onclick="openLetter('bachelorette.pdf')">For Your Bachelorette</button>
+                    <button onclick="openLetter('night-before-wedding.pdf')">The Night Before Your Wedding</button>
+                    <button onclick="openLetter('first-argument.pdf')">First Married Argument</button>
+                    <button onclick="openLetter('first-anniversary.pdf')">Your First Anniversary</button>
+                </div>
+            </div>
+        </div>
+    </section>    
 </body>
 </html>

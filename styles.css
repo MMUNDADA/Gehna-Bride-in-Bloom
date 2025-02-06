@@ -43,6 +43,15 @@ body {
     position: relative;
 }
 
+#letters-for-the-future {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
 .countdown-content {
     display: flex;
     flex-direction: column;
@@ -241,4 +250,86 @@ p {
     width: 80%;
     max-width: 500px;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.envelope-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.envelope {
+    width: 200px;
+    height: 150px;
+    background: url('envelope-closed.png') no-repeat center center/cover;
+    transition: transform 0.5s ease-in-out, background 0.5s ease-in-out;
+}
+
+.envelope.opened {
+    background: url('envelope-open.png') no-repeat center center/cover;
+    transform: translateY(-20px);
+}
+
+
+.letters-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 60%;
+    margin: 0 auto;
+}
+
+.letters-text {
+    font-size: 20px;
+    color: #4a4a4a;
+    margin-bottom: 20px;
+}
+
+.envelope-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+.envelope {
+    width: 300px;
+    height: 225px;
+    background: url('envelope-closed.png') no-repeat center center/cover;
+    transition: transform 0.5s ease-in-out, background 0.5s ease-in-out;
+}
+
+.envelope.opened {
+    background: url('envelope-open.png') no-repeat center center/cover;
+    transform: translateY(-20px);
+}
+
+.letters-buttons {
+    display: none;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.letters-buttons button {
+    background: #c47f39;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 18px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.letters-buttons button:hover {
+    background: #a85e2b;
 }
